@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My HTML Page</title>
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="nav-container">
+        <div class="name-card">
+            <span class="umd">UMD</span>
+            <span class="groups">GROUPS</span>
+        </div>
+        <ul class="navigation">
+            <li class="tab"><a class="opt" href="/groupChat">Groups</a></li>
+            <li class="tab"><a class="opt" href="#">Home</a></li>
+            <li class="tab"></li>
+        </ul>
+    </nav>
+
+    <div class="title-card">
+        <h1> <span class="group-title">Group</span> Finder </h1>
+        <div> Create and explore CMSC groups </div>
+        <form method="get" action="/createGroup">
+            <input type="submit" value="Create a Group" class="create-group-btn">
+        </form>
+    </div>
+
+    <div class="main-content">
+        <h2> Browse Groups </h2>
+        <br>
+
+        <div class="container-wrapper">
+            <%- groupElements %>
+
+                <div class="container">
+                    <div class="content">
+                        <div class="group-name">Example Group</div>
+                        <div class="location">Zoom</div>
+                        <div class="members-course">
+                            <div class="members">
+                                <div class="number">6</div>
+                                <div class="label">Members</div>
+                            </div>
+                            <div class="course">
+                                <div class="number">CMSC335</div>
+                                <div class="label">Course</div>
+                            </div>
+                        </div>
+                        <button class="join-btn">Join</button>
+                    </div>
+                </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+html {
+	width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background: #121212;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 30px;
+	font-size: 40px;
+	color: white;
+}
+
+/* LOGIN */
+#login-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	font-size: 25px;
+	font-weight: 400;
+	outline: none;
+	cursor: pointer;
+	background: linear-gradient(#700f0f, #550707);
+	color: white;
+	border: 0;
+	border-radius: 3px;
+	padding: 10px 10px 20px 10px;
+	margin-top: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login-button:hover {
+	box-shadow: #6d6d6d40 0 8px 8px;
+	transform: scale(1.05);
+}
+
+.login-field {
+	background: #121212;
+	border: none;
+	position: relative;
+	display: block;
+	outline: none;
+	width: 400px;
+	height: 30px;
+	font-size: 30px;
+	padding: 10px;
+	padding-top: -30px;
+	color: #cacaca;
+	-webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*  NAVBAR */
+
+.nav-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(34, 35, 36);
+    box-shadow: 0 5px 15px 0 #00000040;
+    color: white;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 99%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.groups {
+    font-weight: bolder;
+}
+
+.umd {
+    padding-left: 4px;
+    color: #b11313;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+}
+
+.opt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+.opt:hover {
+    color: #b11313;
+}
